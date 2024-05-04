@@ -22,13 +22,13 @@ const Login = () => {
   };
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)}>
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Nombre de usuario"
         value={username}
-        onKeyDown={(e) => handleKeyDown(e)}
-        onChange={(e) => handleUsername(e)}
+        onKeyDown={handleKeyDown}
+        onChange={handleUsername}
       />
       <button>Registrarse</button>
       <p>{username}</p>
